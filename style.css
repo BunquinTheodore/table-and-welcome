@@ -193,3 +193,5 @@ footer {
 @media (prefers-reduced-motion: reduce) {
     header h1, .tagline { animation: none; }
 }
+
+.facts a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
