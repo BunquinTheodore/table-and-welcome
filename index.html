@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Personal Website</title>
+    <meta name="description" content="A personal website about food and hospitality.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
@@ -13,41 +14,55 @@
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>Food and Hospitality</p>
+        <div class="wrap">
+            <h1>Welcome to My Website</h1>
+            <p>Food and Hospitality</p>
+        </div>
     </header>
 
     <section class="light">
-        <h2>About Me</h2>
-        <div class="about">
-            <img src="photo.svg" alt="My personal picture">
-            <p>
-                Hello! My name is [Your Name]. I am a student who loves
-                food, service and making guests feel welcome. I am learning
-                how a good meal, a clean space and a warm smile come together
-                in the hospitality industry.
-            </p>
+        <div class="wrap row">
+            <h2>About Me</h2>
+            <div class="about">
+                <img src="photo.svg" alt="My personal picture">
+                <p>
+                    Hello! My name is [Your Name]. I am a student who loves
+                    food, service and making guests feel welcome. I am learning
+                    how a good meal, a clean space and a warm smile come
+                    together in the hospitality industry.
+                </p>
+            </div>
         </div>
     </section>
 
     <section class="dark">
-        <h2>My Hobbies</h2>
-        <ul>
-            <li>Cooking and Trying New Recipes</li>
-            <li>Visiting Cafes and Restaurants</li>
-            <li>Baking and Pastry Making</li>
-        </ul>
+        <div class="wrap row">
+            <h2>My Hobbies</h2>
+            <ul class="hobbies">
+                <li>Cooking and Trying New Recipes</li>
+                <li>Visiting Cafes and Restaurants</li>
+                <li>Baking and Pastry Making</li>
+            </ul>
+        </div>
     </section>
 
     <section class="light">
-        <h2>My Education</h2>
-        <p>Course: [Your Course, for example BS Hospitality Management]</p>
-        <p>Year Level: [Your Year Level]</p>
+        <div class="wrap row">
+            <h2>My Education</h2>
+            <dl class="facts">
+                <div><dt>Course</dt><dd>[Your Course, for example BS Hospitality Management]</dd></div>
+                <div><dt>Year Level</dt><dd>[Your Year Level]</dd></div>
+            </dl>
+        </div>
     </section>
 
     <section class="dark">
-        <h2>Contact Information</h2>
-        <p>Email: [youremail@email.com]</p>
+        <div class="wrap row">
+            <h2>Contact Information</h2>
+            <dl class="facts">
+                <div><dt>Email</dt><dd>[youremail@email.com]</dd></div>
+            </dl>
+        </div>
     </section>
 
     <footer>
