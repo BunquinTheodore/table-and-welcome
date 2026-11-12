@@ -52,7 +52,7 @@
         if (active === current) return;
         current = active;
         var link = links.filter(function (l) { return l.getAttribute("href") === "#" + active.id; })[0];
-        links.forEach(function (l) { l.style.opacity = l === link ? "1" : "0.55"; });
+        links.forEach(function (l) { l.style.opacity = l === link ? "1" : "0.78"; });
         moveLine(link);
     }
 
@@ -103,6 +103,8 @@
         Promise.all([
             document.fonts.load('500 40px "Cormorant Garamond"'),
             document.fonts.load('40px "Pinyon Script"'),
+            document.fonts.load('italic 500 20px "Cormorant Garamond"'),
+            document.fonts.load('600 20px "Cormorant Garamond"'),
             document.fonts.load('600 12px "Manrope"')
         ]).then(init, init);
     } else {

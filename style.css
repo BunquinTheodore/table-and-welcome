@@ -181,7 +181,7 @@ p { margin: 0; }
     white-space: nowrap;
 }
 .tagline { max-width: 560px; margin: 46px auto 0; font-size: 1.45rem; font-style: italic; }
-@media (min-width: 801px) { .tagline { max-width: none; white-space: nowrap; } }
+@media (min-width: 1101px) { .tagline { max-width: none; white-space: nowrap; } }
 .hero-actions { margin-top: 38px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
 /* Marquee strip */
@@ -224,7 +224,7 @@ h2 { font-size: 1.6rem; letter-spacing: 0.14em; line-height: 1.3; padding-top: 2
     box-shadow: inset 0 0 0 3px rgba(47, 48, 32, 0.35), 0 14px 30px rgba(47, 48, 32, 0.22);
     flex-shrink: 0;
 }
-.about p { text-align: justify; font-size: 1.4rem; }
+.about p { text-align: left; font-size: 1.32rem; }
 .facts.glance { margin-top: 64px; }
 
 /* Statement in a gold frame */
@@ -320,7 +320,7 @@ footer .made { font-size: 1.9rem; margin-top: 10px; line-height: 1.2; }
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
 .js .reveal.in { opacity: 1; transform: none; }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
     body { font-size: 1.18rem; }
     .wrap { padding: 0 22px; }
     section { padding: 72px 0; }
@@ -333,7 +333,7 @@ footer .made { font-size: 1.9rem; margin-top: 10px; line-height: 1.2; }
     .hobbies li { grid-template-columns: 1fr; gap: 6px; }
     .facts > div { grid-template-columns: 1fr; gap: 0; }
     .facts dt { line-height: 1.8; }
-    .hero { padding: 170px 0 80px; }
+    .hero { padding: 200px 0 80px; }
     .hello { font-size: 2.1rem; }
     .nav { flex-wrap: wrap; border-radius: 28px; padding: 8px 8px 10px 20px; }
     .nav-links { order: 3; width: 100%; overflow-x: auto; gap: 24px; padding: 10px 0 8px; }

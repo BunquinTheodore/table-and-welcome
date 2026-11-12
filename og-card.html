@@ -31,6 +31,8 @@ Promise.all([document.fonts.load('500 40px "Cormorant Garamond"'), document.font
     s.style.display = "inline-block"; s.style.letterSpacing = "0px";
     var base = s.getBoundingClientRect().width;
     s.style.letterSpacing = ((W - base) / s.textContent.length) + "px";
+    var t = document.querySelector(".tag"); t.style.display = "inline-block"; t.style.whiteSpace = "nowrap";
+    var tw = t.getBoundingClientRect().width; if (tw > W) t.style.fontSize = (44 * W / tw) + "px";
 });
 </script>
 </body>
