@@ -258,6 +258,20 @@ h2 { font-size: 1.6rem; letter-spacing: 0.14em; line-height: 1.3; padding-top: 2
 }
 .hobbies li:last-child { border-bottom: 1px solid currentColor; }
 .hobbies li:hover { padding-left: 14px; }
+.hobbies li > div { display: contents; }
+.shots { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 16px; margin-top: 22px; }
+.shots img {
+    height: 225px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 6px;
+    background: var(--gold);
+    border-radius: 16px;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+    display: block;
+}
+.shots img:only-child { height: 380px; }
 .hobbies h3 { font-size: 1.25rem; letter-spacing: 0.1em; line-height: 1.4; }
 
 /* Ruled facts */
@@ -326,6 +340,7 @@ footer .made { font-size: 1.9rem; margin-top: 10px; line-height: 1.2; }
     .about p { text-align: left; font-size: 1.25rem; }
     .facts.glance { margin-top: 40px; }
     .hobbies li { grid-template-columns: 1fr; gap: 6px; }
+    .shots img, .shots img:only-child { height: auto; width: 100%; }
     .facts > div { grid-template-columns: 1fr; gap: 0; }
     .facts dt { line-height: 1.8; }
     .hero { padding: 200px 0 80px; }
