@@ -3,42 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shane Ranet Basilio</title>
+    <title>Shane Ranet Basilio | BSIT Student</title>
     <meta name="description" content="Personal website of Shane Ranet Basilio, a first-year BS Information Technology student at Batangas State University.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shane Ranet Basilio">
+    <meta property="og:title" content="Shane Ranet Basilio | BSIT Student">
+    <meta property="og:description" content="A first-year Information Technology student who enjoys learning, exploring, and making meaningful memories.">
+    <meta property="og:url" content="https://table-and-welcome.vercel.app/">
+    <meta property="og:image" content="https://table-and-welcome.vercel.app/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shane Ranet Basilio | BSIT Student">
+    <meta name="twitter:description" content="A first-year Information Technology student who enjoys learning, exploring, and making meaningful memories.">
+    <meta name="twitter:image" content="https://table-and-welcome.vercel.app/og.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
 
-    <header>
+    <div class="splash" id="splash" aria-hidden="true">
+        <div class="splash-name">Shane Ranet Basilio</div>
+        <div class="splash-sub">Personal Website</div>
+        <i class="splash-line"></i>
+    </div>
+
+    <nav class="nav" id="nav" aria-label="Main">
+        <a class="nav-home" href="#top" data-link>Home</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" data-link>About</a>
+            <a href="#hobbies" data-link>Hobbies</a>
+            <a href="#education" data-link>Education</a>
+            <a href="#contact" data-link>Contact</a>
+            <i class="nav-line" id="navLine"></i>
+        </div>
+        <a class="nav-btn" href="mailto:26-01628@g.batstate-u.edu.ph">Email Me</a>
+    </nav>
+
+    <header id="top" class="hero light" data-section>
         <div class="wrap">
-            <span class="hello">Hello, I'm</span>
-            <h1>Shane Ranet Basilio</h1>
-            <p class="tagline">A first-year Information Technology student who enjoys learning, exploring, and making meaningful memories.</p>
-            <span class="meta">BSIT, Batangas State University</span>
+            <span class="hello rise">Hello, I'm</span>
+            <div class="lockup rise">
+                <h1 id="heroName">Shane Ranet Basilio</h1>
+                <p class="lockup-sub" id="heroSub">BSIT, Batangas State University</p>
+            </div>
+            <p class="tagline rise">A first-year Information Technology student who enjoys learning, exploring, and making meaningful memories.</p>
+            <div class="hero-actions rise">
+                <a class="btn" href="#about">Get to Know Me</a>
+                <a class="btn ghost" href="#contact">Contact</a>
+            </div>
         </div>
     </header>
 
-    <section class="light">
+    <div class="marquee dark" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Learning</span><span>Exploring</span><span>Diving</span><span>Traveling</span><span>Friends</span><span>Memories</span>
+            <span>Learning</span><span>Exploring</span><span>Diving</span><span>Traveling</span><span>Friends</span><span>Memories</span>
+            <span>Learning</span><span>Exploring</span><span>Diving</span><span>Traveling</span><span>Friends</span><span>Memories</span>
+        </div>
+    </div>
+
+    <section class="light" id="about" data-section>
         <div class="wrap row">
             <h2>About Me</h2>
-            <div class="about">
-                <img src="photo.svg" alt="Shane Ranet Basilio">
-                <p>
-                    Hi! I'm Shane, a first-year Bachelor of Science in Information
-                    Technology student at Batangas State University, Alangilan Campus.
-                    I come from Puerto Galera, Oriental Mindoro. I enjoy discovering
-                    new things, spending time with people who matter to me, and
-                    learning experiences that help me grow as a person.
-                </p>
+            <div>
+                <div class="about">
+                    <img src="photo.jpg" alt="Shane Ranet Basilio">
+                    <p>
+                        Hi! I'm Shane, a first-year Bachelor of Science in Information
+                        Technology student at Batangas State University, Alangilan Campus.
+                        I come from Puerto Galera, Oriental Mindoro. I enjoy discovering
+                        new things, spending time with people who matter to me, and
+                        learning experiences that help me grow as a person.
+                    </p>
+                </div>
+                <dl class="facts glance">
+                    <div><dt>Name</dt><dd>Shane Ranet Basilio</dd></div>
+                    <div><dt>Program</dt><dd>Bachelor of Science in Information Technology</dd></div>
+                    <div><dt>Year Level</dt><dd>First Year, Block 1108</dd></div>
+                    <div><dt>Campus</dt><dd>Batangas State University, Alangilan Campus</dd></div>
+                    <div><dt>Hometown</dt><dd>Puerto Galera, Oriental Mindoro</dd></div>
+                </dl>
             </div>
         </div>
     </section>
 
-    <section class="dark">
+    <section class="dark statement" aria-label="Statement">
+        <div class="wrap">
+            <p>Learning, exploring, and making meaningful memories.</p>
+        </div>
+    </section>
+
+    <section class="light" id="hobbies" data-section>
         <div class="wrap row">
             <h2>My Hobbies</h2>
             <ul class="hobbies">
@@ -58,7 +120,7 @@
         </div>
     </section>
 
-    <section class="light">
+    <section class="dark" id="education" data-section>
         <div class="wrap row">
             <h2>My Education</h2>
             <dl class="facts">
@@ -81,22 +143,27 @@
         </div>
     </section>
 
-    <section class="dark">
+    <section class="light" id="contact" data-section>
         <div class="wrap row">
             <h2>Contact Information</h2>
             <div>
                 <p class="lead">I'd be happy to connect and meet new people!</p>
                 <dl class="facts">
                     <div><dt>Email</dt><dd><a href="mailto:26-01628@g.batstate-u.edu.ph">26-01628@g.batstate-u.edu.ph</a></dd></div>
+                    <div><dt>Based in</dt><dd>Puerto Galera, Oriental Mindoro</dd></div>
+                    <div><dt>School</dt><dd>Batangas State University, Alangilan Campus</dd></div>
                 </dl>
+                <a class="btn solid" href="mailto:26-01628@g.batstate-u.edu.ph">Send an Email</a>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="dark">
+        <a class="totop" href="#top">Back to Top</a>
         <p>Copyright 2026 Shane Ranet Basilio</p>
         <p>Made with curiosity and a little creativity.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
