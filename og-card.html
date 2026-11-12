@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Manrope:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Pinyon+Script&family=Manrope:wght@600&display=swap" rel="stylesheet">
 <style>
-    html, body { margin: 0; width: 1200px; height: 630px; background: #F6C945; color: #3A2112; overflow: hidden; }
+    html, body { margin: 0; width: 1200px; height: 630px; background: #44452E; color: #F2EEE3; overflow: hidden; }
     .card { align-items: flex-start; width: 1200px; height: 630px; box-sizing: border-box; padding: 0 90px; display: flex; flex-direction: column; justify-content: center; }
-    .hello { font: 600 20px "Manrope", Arial, sans-serif; letter-spacing: 0.3em; text-transform: uppercase; }
-    h1 { margin: 22px 0 0; font: 700 112px/1.05 "Josefin Sans", Arial, sans-serif; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+    .hello { font: 400 52px/1 "Pinyon Script", cursive; }
+    h1 { margin: 22px 0 0; font: 500 112px/1.05 "Cormorant Garamond", Arial, sans-serif; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
     .sub { margin-top: 26px; font: 600 30px "Manrope", Arial, sans-serif; letter-spacing: 0.3em; text-transform: uppercase; white-space: nowrap; }
-    hr { border: 0; border-top: 1px solid #3A2112; margin: 44px 0 30px; width: 1020px; }
-    .tag { font: 300 26px/1.4 "Josefin Sans", Arial, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+    hr { border: 0; border-top: 1px solid #F2EEE3; margin: 44px 0 30px; width: 1020px; }
+    .tag { font: 400 44px/1.2 "Pinyon Script", cursive; }
 </style>
 </head>
 <body>
@@ -22,7 +22,7 @@
     <div class="tag">Learning, exploring, and making meaningful memories</div>
 </div>
 <script>
-Promise.all([document.fonts.load('700 40px "Josefin Sans"'), document.fonts.load('300 20px "Josefin Sans"'), document.fonts.load('600 12px "Manrope"')]).then(function () {
+Promise.all([document.fonts.load('500 40px "Cormorant Garamond"'), document.fonts.load('40px "Pinyon Script"'), document.fonts.load('600 12px "Manrope"')]).then(function () {
     var n = document.getElementById("n"), s = document.getElementById("s");
     n.style.display = "inline-block";
     var W = 1020, sp = parseFloat(getComputedStyle(n).letterSpacing);

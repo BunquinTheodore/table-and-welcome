@@ -101,7 +101,8 @@
 
     if (document.fonts && document.fonts.load) {
         Promise.all([
-            document.fonts.load('700 40px "Josefin Sans"'),
+            document.fonts.load('500 40px "Cormorant Garamond"'),
+            document.fonts.load('40px "Pinyon Script"'),
             document.fonts.load('600 12px "Manrope"')
         ]).then(init, init);
     } else {
